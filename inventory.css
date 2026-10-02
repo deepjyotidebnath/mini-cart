@@ -1,0 +1,31 @@
+.nav{display:flex;gap:8px}
+.grow{flex:1 1 260px}
+.f{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:7px 16px;font-weight:600;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.filters .f{width:auto;flex:1 1 150px}
+.sm{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;font-size:14px;color:var(--ink)}
+.sm.go{background:var(--leaf);border-color:var(--leaf);color:#fff}.sm.bad{color:var(--chilli)}
+.th{width:40px;height:30px;border-radius:5px;object-fit:cover;vertical-align:middle;margin-right:8px}
+td small{color:var(--mute)}
+.banner.bad{border-color:var(--chilli)}
+.banner button{margin-left:8px}
+.pill.low{background:var(--chilli)}
+dialog{border:0;border-radius:16px;padding:0;background:var(--card);color:var(--ink);width:min(520px,94vw);max-height:92vh}
+dialog::backdrop{background:#0008}
+.dlg{padding:18px;display:grid;gap:10px}
+.dlg h2,.dlg h3{margin:0}.dlg h3{font:700 16px 'Baloo 2'}
+.dlg label{display:grid;gap:3px;font-weight:600;font-size:14px}
+.r{display:flex;justify-content:space-between;align-items:center;gap:8px}
+label.r{display:flex}label.r .f{width:110px}
+.r3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:6px}
+.x{background:none;border:0;font-size:26px;cursor:pointer;color:var(--ink)}
+.cta{border:0;border-radius:12px;padding:11px;font-weight:700;color:#fff;background:var(--leaf);width:100%;cursor:pointer;font:inherit;font-weight:700}
+.cta.alt{background:var(--ink)}
+.note{color:var(--mute);font-size:14px;margin:0}
+#lbl{background:#fff;color:#000;text-align:center;padding:10px;border-radius:8px;border:1px dashed #999;font-family:Arial,sans-serif}
+#lbl svg{max-width:100%;height:auto}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:99px;z-index:20}
+.dim{color:var(--mute)}

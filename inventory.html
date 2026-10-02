@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Inventory – Quick Med Pune</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📦</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+<header><div class="bar">
+  <h1>Quick Med <span>Inventory</span></h1>
+  <nav class="nav"><a class="ghost" href="dashboard.html">Dashboard</a><a class="ghost" href="index.html">Store</a></nav>
+</div></header>
+<main>
+  <div id="alerts" class="banner" role="status"></div>
+  <section class="kpis" id="kpis" aria-label="Inventory summary"></section>
+  <div class="tools">
+    <label class="grow">Scan barcode or type SKU<input id="scan" class="f" placeholder="Scan, then press Enter" autocomplete="off" inputmode="text"></label>
+    <button id="csv">Export stock (CSV)</button>
+  </div>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <section id="view" class="card"></section>
+</main>
+<dialog id="dlg"><div class="dlg" id="dlgBody"></div></dialog>
+<script src="products.js"></script>
+<script src="inventory.js"></script>
+</body>
+</html>
